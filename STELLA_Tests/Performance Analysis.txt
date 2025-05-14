@@ -1,0 +1,59 @@
+LSTM - Dynamic Univariate
+Training Size = 8784
+Testing Size = 4464
+Input Size = 6
+Output Size = 1, 2, 6
+
+build_model = 5 minutes 8 seconds
+forecast = 3 minutes 42 seconds
+Overall RMSE = 2.44
+
+ARIMA - Dynamic Univariate
+Training Size = 8784
+Testing Size = 4464
+Input Size = 6
+Output Size = 1, 2, 6
+
+build_model = 2 seconds
+forecast = 1 minutes 24 seconds
+Overall RMSE = 1.70
+
+LSTM - Static Univariate
+Training Size = 22032
+Testing Size = 1440
+Input Size = 6
+Output Size = 6
+
+build_model = 11 minutes 43 seconds
+forecast = 1 minutes 2 seconds
+Overall RMSE = 1.06
+
+ARIMA - Static Univariate
+Training Size = 22032
+Testing Size = 1440
+Input Size = 6
+Output Size = 6
+
+build_model = 2 seconds
+forecast = 56 seconds
+Overall RMSE = 1.10 - 1.08 without differencing
+
+LSTM - Static Multivariate
+Training Size = 22032
+Testing Size = 1440
+Input Size = 6
+Output Size = 6
+
+build_model = 12 minutes 3 seconds
+forecast = 1 minutes 2 seconds
+Overall RMSE = 2.380
+
+ARIMA - Static Multivariate
+Training Size = 22032
+Testing Size = 1440
+Input Size = 6
+Output Size = 6
+
+build_model = 25 minutes and 27 seconds
+forecast = 94 minutes 57 seconds
+Overall RMSE = 9.12

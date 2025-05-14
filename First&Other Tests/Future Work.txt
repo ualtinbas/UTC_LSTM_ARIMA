@@ -1,0 +1,23 @@
+Train the models on data from 2021 - 2022 ¤
+Train both ARIMA and LSTM and compare their predictions (Use RMSE) ¤
+Graph RMSE models, calculate each day's deviation ¤
+Try predicting by feeding the model multiple timesteps (for both models) (G(t), G(t-1), G(t-2), ...) ¤
+Learn ARIMA's definition ¤
+
+Analyze the model's inner mechanisms:
+1) Verify inputs and outputs
+2) Verify dataset
+
+For look-back 10:
+LSTM Model Fit Performance: 38 minutes and 54 seconds
+ARIMA Model Fit Performance: 56 minutes and 42 seconds
+
+LSTM Model Testing Overall RMSE: 0.43
+ARIMA Model Testing Overall RMSE: 0.423
+
+Given recent weather conditions, what is the expected PV system power for the day ahead?
+
+BASE CASE: LSTM Score of Solar Energy Predictions With 400 Units LSTM and 150 Units Dense (Batch Size 24): 827.898 - Roughly 150 minutes
+FIRST CASE: LSTM Score of Solar Energy Predictions With 200 Units LSTM and 100 Units Dense (Batch Size 24): 856.822
+SECOND CASE: LSTM Score of Solar Energy Predictions With 200 Units LSTM and 100 Units Dense (Batch Size 72): 864.777 - 83 minutes and 15.9 seconds # An RMSE increase of 4.45% for 44.49% more efficiency
+THIRD CASE: LSTM Score of Solar Energy Predictions With 600 Units LSTM and 250 Units Dense (Batch Size 24): 852.964 - 548 minutes # The accuracy increase is negligible when compared to the extremely inefficient performance
